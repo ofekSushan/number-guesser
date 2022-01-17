@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        background-image: url(imgg/gamble.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      p {
+        color: rgb(210, 245, 16);
+        font-size: 30px;
+      }
+      h1 {
+        color: rgb(5, 77, 172);
+        font-size: 50px;
+      }
+      input {
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+      }
+      #pic {
+        display: none;
+      }
+      img {
+        width: 500px;
+        height: 500px;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+    />
+    <title>number game</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Guess the number</h1>
+      <div id="game">
+        <p>
+          Rules: The number is between <span class="min-num"> </span> and
+          <span class="max-num"></span>
+        </p>
+        <p style="color: rgb(210, 245, 16);">
+          You have <span class="left-num"></span> Guesses left 
+        
+        
+      </p>
+        <input type="text" id="guess-input" placeholder="Try Your luck" />
+        <input type="submit" value="Submit" id="guess-btn" />
+        <p class="message"></p>
+        <div id="pic">
+          <img id="imageid" src="imgg/gamble.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
